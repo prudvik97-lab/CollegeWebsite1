@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .transport-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .transport-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .transport-title h1 {
+        font-size: 46px;
+        color: #0b3c5d;
+    }
+
+    .transport-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .transport-banner {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .transport-section {
+        margin-bottom: 40px;
+    }
+
+    .transport-section h2 {
+        font-size: 28px;
+        color: #2e7d32;
+        margin-bottom: 15px;
+    }
+
+    .transport-section p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .transport-list {
+        padding-left: 20px;
+    }
+
+    .transport-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .transport-title h1 {
+            font-size: 34px;
+        }
+
+        .transport-banner {
+            height: 260px;
+        }
+    }
+</style>
+
+<div class="transport-page">
+
+    <!-- Title -->
+
+    <div class="transport-title">
+        <h1>Transport Facility</h1>
+        <p>Safe, reliable, and convenient transportation for students</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://media.istockphoto.com/id/1481400442/photo/young-cheerful-student-arriving-at-the-bus-station.jpg?s=612x612&w=0&k=20&c=5r-BS8vVwnpLZDobyzO8diH8c_uvEKKSJKgL_u8Qbwk="
+         alt="College Transport Facility"
+         class="transport-banner">
+
+    <!-- About Transport -->
+
+    <div class="transport-section">
+        <h2>About Transport Facility</h2>
+        <p>
+            The college provides a well-organized transport facility to ensure
+            safe and comfortable travel for students and staff from various
+            locations to the campus.
+        </p>
+        <p>
+            Our transport system helps students reach the campus on time,
+            reducing travel stress and supporting punctuality.
+        </p>
+    </div>
+
+    <!-- Transport Features -->
+
+    <div class="transport-section">
+        <h2>Transport Features</h2>
+        <ul class="transport-list">
+            <li>Fleet of well-maintained buses</li>
+            <li>Experienced and trained drivers</li>
+            <li>Regular routes covering nearby towns and villages</li>
+            <li>Strict safety and speed regulations</li>
+            <li>GPS tracking and regular maintenance</li>
+            <li>Comfortable seating and clean buses</li>
+        </ul>
+    </div>
+
+    <!-- Safety & Convenience -->
+
+    <div class="transport-section">
+        <h2>Safety & Convenience</h2>
+        <p>
+            Student safety is our top priority. All buses follow safety norms
+            and are regularly inspected. Dedicated staff monitor routes and
+            schedules to ensure smooth operation.
+        </p>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="transport-section">
+        <h2>Why Choose Our Transport?</h2>
+        <p>
+            The college transport facility saves time, ensures safety, and
+            provides a hassle-free commuting experience, allowing students
+            to focus on their academic goals.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

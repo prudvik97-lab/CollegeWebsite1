@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .eee-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .eee-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .eee-title h1 {
+        font-size: 46px;
+        color: #0b3c5d;
+    }
+
+    .eee-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .eee-banner {
+        width: 900px;
+        height: 600px;
+        object-fit: cover;
+        background: #f5f5f5;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        margin-left : 170px;
+    }
+
+    .eee-section {
+        margin-bottom: 45px;
+    }
+
+    .eee-section h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .eee-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .eee-list {
+        padding-left: 20px;
+    }
+
+    .eee-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .eee-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .eee-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .eee-title h1 {
+            font-size: 36px;
+        }
+
+        .eee-banner {
+            height: 260px;
+        }
+    }
+
+
+</style>
+
+<div class="eee-page">
+
+    <!-- Title -->
+
+    <div class="eee-title">
+        <h1>Electrical Engineering</h1>
+        <p>Powering innovation through electrical systems and technology</p>
+    </div>
+
+    <!-- Banner -->
+
+    <img
+        src="https://img.freepik.com/premium-photo/electricity-engineer-female-working-check-service-high-voltage-electrical-cabinet-worker-repair-electric-surge-problem-industry-factory_43300-4842.jpg"
+        alt="Electrical Engineering"
+        class="eee-banner"
+    >
+
+    <!-- Overview -->
+
+    <div class="eee-section">
+        <h2>Overview</h2>
+        <p>
+            Electrical Engineering deals with the study, design, and application
+            of electrical systems, power generation, transmission, and utilization.
+            It plays a vital role in modern infrastructure, industries, and
+            technological advancements.
+        </p>
+        <p>
+            The program provides strong foundations in electrical circuits,
+            machines, power systems, electronics, and control systems, preparing
+            students for both industry and higher studies.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="eee-section">
+        <h2>Vision & Mission</h2>
+
+        <p><strong>Vision:</strong></p>
+        <p>
+            To develop competent electrical engineers capable of contributing
+            to sustainable power systems and emerging electrical technologies.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul class="eee-list">
+            <li>To provide quality education in electrical engineering.</li>
+            <li>To promote innovation and practical learning.</li>
+            <li>To develop professionals with ethical and technical excellence.</li>
+        </ul>
+    </div>
+
+    <!-- Core Subjects -->
+
+    <div class="eee-section">
+        <h2>Core Subjects</h2>
+        <ul class="eee-list">
+            <li>Electrical Circuits</li>
+            <li>Electrical Machines</li>
+            <li>Power Systems</li>
+            <li>Control Systems</li>
+            <li>Power Electronics</li>
+            <li>Signals and Systems</li>
+        </ul>
+    </div>
+
+    <!-- Advanced Areas -->
+
+
+    <div class="eee-section">
+        <h2>Advanced Learning Areas</h2>
+        <ul class="eee-list">
+            <li>Renewable Energy Systems</li>
+            <li>Smart Grid Technology</li>
+            <li>Electric Vehicles</li>
+            <li>Industrial Automation</li>
+            <li>High Voltage Engineering</li>
+            <li>Energy Management Systems</li>
+        </ul>
+    </div>
+
+    <!-- Labs & Infrastructure -->
+
+
+    <div class="eee-section">
+        <h2>Laboratories & Infrastructure</h2>
+        <p>
+            The Electrical Engineering department is equipped with modern
+            laboratories that enable hands-on learning and experimentation.
+        </p>
+        <ul class="eee-list">
+            <li>Electrical Machines Lab</li>
+            <li>Power Systems Lab</li>
+            <li>Control Systems Lab</li>
+            <li>Power Electronics Lab</li>
+            <li>Electrical Measurements Lab</li>
+        </ul>
+    </div>
+
+    <!-- Career Opportunities -->
+
+    <div class="eee-section">
+        <h2>Career Opportunities</h2>
+        <p>
+            Electrical Engineering graduates have diverse career opportunities
+            across public and private sectors.
+        </p>
+
+        <div class="eee-grid">
+            <div class="eee-box">
+                <ul class="eee-list">
+                    <li>Electrical Engineer</li>
+                    <li>Power System Engineer</li>
+                    <li>Maintenance Engineer</li>
+                </ul>
+            </div>
+
+            <div class="eee-box">
+                <ul class="eee-list">
+                    <li>Control & Automation Engineer</li>
+                    <li>Renewable Energy Engineer</li>
+                    <li>Electrical Design Engineer</li>
+                </ul>
+            </div>
+
+            <div class="eee-box">
+                <ul class="eee-list">
+                    <li>Government & PSU Jobs</li>
+                    <li>Higher Studies & Research</li>
+                    <li>Entrepreneurship</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why EEE -->
+     
+    <div class="eee-section">
+        <h2>Why Choose Electrical Engineering?</h2>
+        <p>
+            Electrical Engineering is at the heart of modern civilization,
+            powering homes, industries, transportation, and communication.
+        </p>
+        <p>
+            With growing demand for renewable energy, smart grids, and electric
+            vehicles, Electrical Engineering offers stable careers and exciting
+            opportunities worldwide.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

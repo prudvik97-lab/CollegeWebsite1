@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .ds-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .ds-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .ds-title h1 {
+        font-size: 46px;
+        color: #0b3c5d;
+    }
+
+    .ds-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .ds-banner {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 45px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ds-section {
+        margin-bottom: 45px;
+    }
+
+    .ds-section h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .ds-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .ds-list {
+        padding-left: 20px;
+    }
+
+    .ds-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .ds-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .ds-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .ds-title h1 {
+            font-size: 34px;
+        }
+
+        .ds-banner {
+            height: 260px;
+        }
+    }
+
+
+</style>
+
+<div class="ds-page">
+
+    <!-- Title -->
+
+    <div class="ds-title">
+        <h1>Computer Science & Engineering (Data Science)</h1>
+        <p>Transforming data into meaningful insights and intelligence</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeTSqhcOkykZnr2rSUrdn4VByVrhEmU-wenQ&s"
+         alt="CSE Data Science"
+         class="ds-banner">
+
+    <!-- Overview -->
+
+    <div class="ds-section">
+        <h2>Overview</h2>
+        <p>
+            Computer Science & Engineering (Data Science) is a specialized branch
+            that focuses on extracting knowledge and insights from structured
+            and unstructured data using scientific methods, algorithms, and systems.
+        </p>
+        <p>
+            This program combines computer science, statistics, mathematics,
+            and domain knowledge to analyze large datasets and support
+            data-driven decision-making.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="ds-section">
+        <h2>Vision & Mission</h2>
+
+        <p><strong>Vision:</strong></p>
+        <p>
+            To create skilled data science professionals capable of solving
+            complex problems using data analytics and intelligent systems.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul class="ds-list">
+            <li>To provide strong foundations in data science and analytics.</li>
+            <li>To promote research and innovation in data-driven technologies.</li>
+            <li>To prepare students for industry, research, and higher education.</li>
+        </ul>
+    </div>
+
+    <!-- Core Subjects -->
+
+    <div class="ds-section">
+        <h2>Core Subjects</h2>
+        <ul class="ds-list">
+            <li>Programming with Python & R</li>
+            <li>Statistics and Probability</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management Systems</li>
+            <li>Machine Learning Fundamentals</li>
+            <li>Big Data Analytics</li>
+        </ul>
+    </div>
+
+    <!-- Advanced Areas -->
+
+    <div class="ds-section">
+        <h2>Advanced Learning Areas</h2>
+        <ul class="ds-list">
+            <li>Data Mining and Warehousing</li>
+            <li>Deep Learning</li>
+            <li>Natural Language Processing</li>
+            <li>Predictive Analytics</li>
+            <li>Business Intelligence</li>
+            <li>Data Visualization</li>
+        </ul>
+    </div>
+
+    <!-- Labs & Infrastructure -->
+
+    <div class="ds-section">
+        <h2>Laboratories & Infrastructure</h2>
+        <p>
+            The Data Science department provides modern laboratories and
+            high-performance computing systems to support analytics,
+            visualization, and research activities.
+        </p>
+        <ul class="ds-list">
+            <li>Data Analytics & Visualization Lab</li>
+            <li>Machine Learning & Big Data Lab</li>
+            <li>Python, R, Hadoop, Spark environments</li>
+            <li>Cloud-based data platforms</li>
+            <li>High-speed internet and licensed tools</li>
+        </ul>
+    </div>
+
+    <!-- Career Opportunities -->
+
+    <div class="ds-section">
+        <h2>Career Opportunities</h2>
+        <p>
+            Graduates of CSE (Data Science) are highly demanded across industries
+            that rely on data-driven insights.
+        </p>
+
+        <div class="ds-grid">
+            <div class="ds-box">
+                <ul class="ds-list">
+                    <li>Data Scientist</li>
+                    <li>Data Analyst</li>
+                    <li>Business Analyst</li>
+                </ul>
+            </div>
+
+            <div class="ds-box">
+                <ul class="ds-list">
+                    <li>Machine Learning Engineer</li>
+                    <li>Big Data Engineer</li>
+                    <li>AI Data Specialist</li>
+                </ul>
+            </div>
+
+            <div class="ds-box">
+                <ul class="ds-list">
+                    <li>Research Analyst</li>
+                    <li>Data Consultant</li>
+                    <li>Higher Studies & Research</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose -->
+     
+    <div class="ds-section">
+        <h2>Why Choose Data Science?</h2>
+        <p>
+            Data is the backbone of modern decision-making. From healthcare
+            and finance to e-commerce and artificial intelligence,
+            data science drives innovation everywhere.
+        </p>
+        <p>
+            Choosing CSE (Data Science) opens doors to high-paying careers,
+            global opportunities, and the ability to shape the future
+            through intelligent data analysis.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

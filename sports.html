@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    
+    .sports-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+    }
+
+    .sports-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sports-title h1 {
+        font-size: 42px;
+        color: #0b3c5d;
+    }
+
+    .sports-banner {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .sports-section {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .sports-section h2 {
+        color: #2e7d32;
+        margin-bottom: 15px;
+    }
+
+    .sports-list {
+        padding-left: 20px;
+    }
+
+    .sports-list li {
+        margin-bottom: 8px;
+    }
+</style>
+
+<div class="sports-page">
+
+    <div class="sports-title">
+        <h1>Sports & Physical Education</h1>
+        <p>Building strength, teamwork, and sportsmanship</p>
+    </div>
+
+    <img src="https://www.schoolscapesuk.com/wp-content/uploads/2017/12/Tregolls-3G-Pitch.jpg"
+         alt="College Sports Ground"
+         class="sports-banner">
+
+    <div class="sports-section">
+        <h2>Sports Facilities</h2>
+        <p>
+            The college encourages physical fitness and overall development
+            through excellent sports and recreation facilities. Students are
+            motivated to participate in indoor and outdoor sports activities.
+        </p>
+
+        <ul class="sports-list">
+            <li>Large outdoor playgrounds</li>
+            <li>Cricket, Football, Volleyball & Athletics</li>
+            <li>Indoor games like Chess, Carrom & Table Tennis</li>
+            <li>Annual sports meet and inter-college tournaments</li>
+            <li>Professional coaching and training support</li>
+        </ul>
+
+        <h2>Benefits of Sports</h2>
+        <p>
+            Sports help students develop discipline, leadership skills,
+            teamwork, and a healthy lifestyle, contributing to their overall
+            personality development.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

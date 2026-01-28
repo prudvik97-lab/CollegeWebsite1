@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .canteen-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .canteen-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .canteen-title h1 {
+        font-size: 42px;
+        color: #0b3c5d;
+    }
+
+    .canteen-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .canteen-banner {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    }
+
+    .canteen-section {
+        margin-bottom: 40px;
+    }
+
+    .canteen-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .canteen-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .canteen-list {
+        padding-left: 20px;
+    }
+
+    .canteen-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .canteen-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .canteen-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .canteen-title h1 {
+            font-size: 32px;
+        }
+
+        .canteen-banner {
+            height: 260px;
+        }
+    }
+
+</style>
+
+<div class="canteen-page">
+
+    <!-- Title -->
+
+    <div class="canteen-title">
+        <h1>College Canteen</h1>
+        <p>Healthy, hygienic, and affordable food for students</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20210912/pngtree-student-canteen-image_871342.jpg"
+         alt="College Canteen"
+         class="canteen-banner">
+
+    <!-- Overview -->
+
+    <div class="canteen-section">
+        <h2>Canteen Overview</h2>
+        <p>
+            The college canteen serves as a vibrant space where students and staff can relax,
+            refresh, and enjoy nutritious meals in a friendly environment.
+        </p>
+        <p>
+            The canteen follows strict hygiene standards and offers a variety of food options
+            catering to diverse tastes.
+        </p>
+    </div>
+
+    <!-- Food Options -->
+
+    <div class="canteen-section">
+        <h2>Food & Beverages</h2>
+        <ul class="canteen-list">
+            <li>Breakfast, lunch, and snacks</li>
+            <li>South Indian and North Indian dishes</li>
+            <li>Fresh juices and beverages</li>
+            <li>Tea, coffee, and refreshments</li>
+            <li>Affordable student-friendly pricing</li>
+        </ul>
+    </div>
+
+    <!-- Facilities -->
+
+    <div class="canteen-section">
+        <h2>Canteen Facilities</h2>
+
+        <div class="canteen-grid">
+            <div class="canteen-box">
+                <ul class="canteen-list">
+                    <li>Spacious seating area</li>
+                    <li>Clean dining environment</li>
+                    <li>Well-ventilated space</li>
+                </ul>
+            </div>
+
+            <div class="canteen-box">
+                <ul class="canteen-list">
+                    <li>Filtered drinking water</li>
+                    <li>Quick service counters</li>
+                    <li>Separate waste disposal</li>
+                </ul>
+            </div>
+
+            <div class="canteen-box">
+                <ul class="canteen-list">
+                    <li>Hygienic food preparation</li>
+                    <li>Regular quality checks</li>
+                    <li>Student-friendly atmosphere</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Objectives -->
+     
+    <div class="canteen-section">
+        <h2>Canteen Objectives</h2>
+        <p>
+            The canteen aims to provide safe, nutritious, and affordable food while creating
+            a comfortable social space for students.
+        </p>
+        <ul class="canteen-list">
+            <li>To promote healthy eating habits</li>
+            <li>To maintain high hygiene standards</li>
+            <li>To offer quality food at reasonable prices</li>
+        </ul>
+    </div>
+
+</div>
+
+{% endblock %}

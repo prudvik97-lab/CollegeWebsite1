@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+    .aiml-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .aiml-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .aiml-title h1 {
+        font-size: 48px;
+        color: #0b3c5d;
+    }
+
+    .aiml-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .aiml-banner {
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 40px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .aiml-section {
+        margin-bottom: 45px;
+    }
+
+    .aiml-section h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .aiml-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .aiml-list {
+        padding-left: 20px;
+    }
+
+    .aiml-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .aiml-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .aiml-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .aiml-title h1 {
+            font-size: 36px;
+        }
+    }
+
+</style>
+
+<div class="aiml-page">
+
+    <!-- Title -->
+
+    <div class="aiml-title">
+        <h1>CSE (Artificial Intelligence & Machine Learning)</h1>
+        <p>Building intelligent systems for a smarter future</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://nietm.in/wp-content/uploads/2022/12/AI.jpg"
+         alt="Artificial Intelligence and Machine Learning"
+         class="aiml-banner">
+
+    <!-- Overview -->
+
+    <div class="aiml-section">
+        <h2>Overview</h2>
+        <p>
+            Computer Science & Engineering (Artificial Intelligence and Machine Learning)
+            is a specialized branch focused on creating intelligent systems that can
+            learn, adapt, and make decisions with minimal human intervention.
+        </p>
+        <p>
+            The program blends computer science fundamentals with advanced AI and ML
+            techniques to solve complex real-world problems in automation, data analysis,
+            and intelligent decision-making.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="aiml-section">
+        <h2>Vision & Mission</h2>
+
+        <p><strong>Vision:</strong></p>
+        <p>
+            To develop competent AI & ML engineers capable of driving innovation,
+            research, and ethical artificial intelligence solutions.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul class="aiml-list">
+            <li>To impart strong foundations in AI, ML, and computer science.</li>
+            <li>To encourage innovation, research, and problem-solving skills.</li>
+            <li>To prepare graduates for global careers and advanced research.</li>
+        </ul>
+    </div>
+
+    <!-- Core Subjects -->
+
+    <div class="aiml-section">
+        <h2>Core Subjects</h2>
+        <ul class="aiml-list">
+            <li>Python Programming for AI</li>
+            <li>Probability and Statistics</li>
+            <li>Linear Algebra</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Machine Learning</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+    </div>
+
+    <!-- Advanced Topics -->
+
+    <div class="aiml-section">
+        <h2>Advanced Learning Areas</h2>
+        <ul class="aiml-list">
+            <li>Deep Learning</li>
+            <li>Neural Networks</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Computer Vision</li>
+            <li>Reinforcement Learning</li>
+            <li>Big Data Analytics</li>
+        </ul>
+    </div>
+
+    <!-- Labs & Infrastructure -->
+
+    <div class="aiml-section">
+        <h2>Laboratories & Infrastructure</h2>
+        <p>
+            The AI & ML department provides state-of-the-art laboratories equipped
+            with high-performance computing systems and modern AI tools.
+        </p>
+        <ul class="aiml-list">
+            <li>AI & Machine Learning Lab</li>
+            <li>Deep Learning & Neural Networks Lab</li>
+            <li>Data Analytics Lab</li>
+            <li>Cloud & GPU-enabled Computing Facilities</li>
+            <li>Licensed AI frameworks and tools</li>
+        </ul>
+    </div>
+
+    <!-- Career Opportunities -->
+
+    <div class="aiml-section">
+        <h2>Career Opportunities</h2>
+        <p>
+            Graduates of CSE (AI & ML) are in high demand across industries due
+            to the rapid growth of intelligent technologies.
+        </p>
+
+        <div class="aiml-grid">
+            <div class="aiml-box">
+                <ul class="aiml-list">
+                    <li>AI Engineer</li>
+                    <li>Machine Learning Engineer</li>
+                    <li>Data Scientist</li>
+                </ul>
+            </div>
+
+            <div class="aiml-box">
+                <ul class="aiml-list">
+                    <li>Computer Vision Engineer</li>
+                    <li>NLP Engineer</li>
+                    <li>Big Data Engineer</li>
+                </ul>
+            </div>
+
+            <div class="aiml-box">
+                <ul class="aiml-list">
+                    <li>Research Scientist</li>
+                    <li>AI Consultant</li>
+                    <li>Higher Studies & Research</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="aiml-section">
+        <h2>Why Choose CSE (AI & ML)?</h2>
+        <p>
+            Artificial Intelligence and Machine Learning are transforming every
+            industry, from healthcare and finance to robotics and smart cities.
+        </p>
+        <p>
+            Choosing CSE (AI & ML) empowers students to work on cutting-edge
+            technologies and build solutions that shape the future of the world.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

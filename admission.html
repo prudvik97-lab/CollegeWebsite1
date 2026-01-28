@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+   
+    body {
+        background-color: #f4f7f6; 
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .form-container {
+        max-width: 550px; 
+        margin: 50px auto;
+        padding: 40px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 20px 48px rgba(0,0,0,0.05);
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0b3c5d;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+
+    .common {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .common label {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #4a5568;
+    }
+
+    .common input,
+    .common select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e2e8f0; 
+        border-radius: 8px;
+        font-size: 15px;
+        color: #2d3748;
+        transition: all 0.3s ease; 
+        box-sizing: border-box; 
+    }
+
+
+    .common input:focus,
+    .common select:focus {
+        outline: none;
+        border-color: #1d70b8;
+        box-shadow: 0 0 0 3px rgba(29, 112, 184, 0.1); 
+    }
+
+
+    .common div[id$="Error"] {
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: 500;
+        min-height: 15px; 
+    }
+    
+
+    .form-container button {
+        width: 100%;
+        padding: 14px;
+        background: #0b3c5d;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 10px;
+        transition: transform 0.1s active, background 0.3s ease;
+    }
+
+    .form-container button:hover {
+        background: #144d75;
+        box-shadow: 0 4px 12px rgba(11, 60, 93, 0.2);
+    }
+
+    .form-container button:active {
+        transform: scale(0.98); 
+    }
+</style>
+
+
+<div class="form-container">
+    <h2>Admission Form</h2>
+
+    <form id="form1" method="POST">
+        {% csrf_token %}
+
+        <div class="common">
+            <label>Parent Name</label>
+            <input type="text" id="parent_name" name="parent_name">
+            <div id="parentError"></div>
+        </div>
+
+        <div class="common">
+            <label>Student Name</label>
+            <input type="text" id="student_name" name="student_name">
+            <div id="studentError"></div>
+        </div>
+
+        <div class="common">
+            <label>Student Email</label>
+            <input type="text" id="email" name="student_email">
+            <div id="emailError"></div>
+        </div>
+
+        <div class="common">
+            <label>Mobile Number</label>
+            <input type="text" id="number" name = "mobile_number">
+            <div id="numberError"></div>
+        </div>
+
+        <div class="common">
+            <label>Date of Birth</label>
+            <input type="date" id="dob" name = "date_of_birth">
+            <div id="dobError"></div>
+        </div>
+
+        <div class="common">
+            <label>Gender</label>
+            <select id="gender" name = "gender">
+                <option value="">-- Select Gender --</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <div id="genderError"></div>
+        </div>
+
+        <div class="common">
+            <label>Department</label>
+            <select id="department" name = "department">
+                <option value="">-- Select Department --</option>
+                <option>Computer Science & Engineering</option>
+                <option>CSE ( AI & ML )</option>
+                <option>CSE ( Data Science )</option>
+                <option>Mechanical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Electrical Engineering</option>
+            </select>
+            <div id="deptError"></div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+document.getElementById('form1').addEventListener('submit', function(event){
+    event.preventDefault();
+
+    let parent = document.getElementById('parent_name');
+    let student = document.getElementById('student_name');
+    let number = document.getElementById('number');
+    let email = document.getElementById('email');
+    let dob = document.getElementById('dob');
+    let gender = document.getElementById('gender');
+    let dept = document.getElementById('department');
+
+    let valid = true;
+
+    if (!parent.value.match(/^[a-zA-Z\s]+$/)) {
+        parentError.textContent = 'Enter valid parent name';
+        parentError.style.color = 'red';
+        valid = false;
+    } else parentError.textContent = '';
+
+    if (!student.value.match(/^[a-zA-Z\s]+$/)) {
+        studentError.textContent = 'Enter valid student name';
+        studentError.style.color = 'red';
+        valid = false;
+    } else studentError.textContent = '';
+
+    if (!number.value.match(/^[0-9]{10}$/)) {
+        numberError.textContent = 'Enter 10 digit mobile number';
+        numberError.style.color = 'red';
+        valid = false;
+    } else numberError.textContent = '';
+
+    if (!email.value.match(/^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]+$/)) {
+        emailError.textContent = 'Enter valid email';
+        emailError.style.color = 'red';
+        valid = false;
+    } else emailError.textContent = '';
+
+    if (dob.value === '') {
+        dobError.textContent = 'Select date of birth';
+        dobError.style.color = 'red';
+        valid = false;
+    } else dobError.textContent = '';
+
+    if (gender.value === '') {
+        genderError.textContent = 'Select gender';
+        genderError.style.color = 'red';
+        valid = false;
+    } else genderError.textContent = '';
+
+    if (dept.value === '') {
+        deptError.textContent = 'Select department';
+        deptError.style.color = 'red';
+        valid = false;
+    } else deptError.textContent = '';
+
+    if (valid) {
+        document.getElementById('form1').submit();
+    }
+});
+</script>
+
+{% endblock %}

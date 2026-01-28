@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital College Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{% static 'colors.css' %}">
+
+    
+    <style>
+        /* ================= FOOTER ================= */
+
+        .footer {
+            background-color: #0f3d2e;
+            color: #ffffff;
+            margin-top: 80px;
+            padding: 50px 20px 20px;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4caf50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p,
+        .footer-section li {
+
+            line-height: 1.7;
+            color: #e0e0e0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #4caf50;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #2e6f5a;
+            font-size: 13px;
+            color: #cccccc;
+        }
+
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-section h3 {
+                border-bottom: none;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo Bar -->
+
+    <div class="logo-bar">
+
+        <!-- Left Side -->
+
+        <div class="logo-left">
+            <img src="https://thumbs.dreamstime.com/b/vector-art-college-logo-featuring-open-book-wings-surrounded-circle-word-year-isolated-white-background-406401203.jpg"
+                 alt="College Logo">
+
+            <div class="logo-text">
+                <h1>Digital College Portal</h1>
+                <p>A Smart Platform for Modern College Management</p>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="logo-right">
+            <img src="https://www.shutterstock.com/image-vector/college-logo-design-template-vector-600nw-2553811015.jpg"
+                 alt="Partner Logo">
+        </div>
+
+    </div>
+
+
+    <!-- Menu Bar -->
+
+<nav class="menu-bar">
+    <ul class="menu-left">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about_us' %}">About Us</a></li>
+
+        <!-- Departments Dropdown -->
+
+        <li class="dropdown">
+            <a href="#">Departments </a>
+            <ul class="dropdown-menu">
+                <li><a href="{% url 'cse' %}">Computer Science & Engineering</a></li>
+                <li><a href="{% url 'aiml' %}">CSE (AI & ML)</a></li>
+                <li><a href="{% url 'cse_data_science' %}">CSE (Data Science)</a></li>
+                <li><a href="{% url 'mechanical' %}">Mechanical Engineering</a></li>
+                <li><a href="{% url 'civil' %}">Civil Engineering</a></li>
+                <li><a href="{% url 'electrical' %}">Electrical Engineering</a></li>
+            </ul>
+        </li>
+
+        <li><a href="{% url 'placements' %}">Placements</a></li>
+
+        <li><a href="{% url 'admission' %}">Admission</a></li>
+
+        <!-- Facilities Dropdown -->
+
+        <li class="dropdown">
+            <a href="">Facilities </a>
+            <ul class="dropdown-menu">
+                <li><a href="{% url 'library' %}">Library</a></li>
+                <li><a href="{% url 'smartboard' %}">Smart Board</a></li>
+                <li><a href="{% url 'hostel' %}">Hostel</a></li>
+                <li><a href="{% url 'transport' %}">Transport</a></li>
+                <li><a href="{% url 'no_ragging' %}">No Ragging</a></li>
+                <li><a href="{% url 'sports' %}">Sports</a></li>
+                <li><a href="{% url 'canteen' %}">Canteen</a></li>
+                <li><a href="{% url 'infrastructure' %}">Infrastructure</a></li>
+            </ul>
+        </li>
+
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Page Content -->
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer Section -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About College -->
+
+        <div class="footer-section">
+            <h3>About College</h3>
+            <p>
+                Digital College Portal is a smart platform designed to support
+                modern engineering education through quality learning, innovation,
+                and career-focused training for future engineers.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about_us' %}">About Us</a></li>
+                <li><a href="">Departments</a></li>
+                <li><a href="">Admissions</a></li>
+                <li><a href="{% url 'placements' %}">Placements</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Departments -->
+
+        <div class="footer-section">
+            <h3>Departments</h3>
+            <ul>
+                <li>Computer Science & Engineering</li>
+                <li>CSE (AI & ML)</li>
+                <li>CSE (Data Science)</li>
+                <li>Mechanical Engineering</li>
+                <li>Civil Engineering</li>
+                <li>Electrical Engineering</li>
+            </ul>
+        </div>
+
+        <!-- Contact & Facilities -->
+
+        <div class="footer-section">
+            <h3>Contact & Facilities</h3>
+            <p>
+                 Hyderabad, Telangana, India<br>
+                 +91 98765 43210<br>
+                 digitalcollege56@gamil.com
+            </p>
+            <p>
+                <strong>Facilities:</strong><br>
+                Modern Labs, Digital Library,<br>
+                Hostel, Sports Complex,<br>
+                Smart Classrooms
+            </p>
+        </div>
+
+    </div>
+        
+       <!--Copy Rights Reserverd--> 
+       
+    <div class="footer-bottom">
+        © 2026 Digital College Portal | All Rights Reserved
+    </div>
+</footer>
+
+
+</body>
+</html>

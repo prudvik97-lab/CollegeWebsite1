@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .hostel-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .hostel-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hostel-title h1 {
+        font-size: 48px;
+        color: #0b3c5d;
+    }
+
+    .hostel-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .hostel-banner {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .hostel-section {
+        margin-bottom: 40px;
+    }
+
+    .hostel-section h2 {
+        font-size: 30px;
+        color: #2e7d32;
+        margin-bottom: 12px;
+    }
+
+    .hostel-section p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .hostel-list {
+        padding-left: 20px;
+    }
+
+    .hostel-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .hostel-title h1 {
+            font-size: 36px;
+        }
+
+        .hostel-banner {
+            height: 260px;
+        }
+    }
+
+
+</style>
+
+<div class="hostel-page">
+
+    <!-- Title -->
+
+    <div class="hostel-title">
+        <h1>College Hostel Facility</h1>
+        <p>Safe, comfortable, and student-friendly residential environment</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://thumbs.dreamstime.com/b/hostel-dormitory-beds-arranged-room-98117029.jpg"
+         alt="College Hostel"
+         class="hostel-banner">
+
+    <!-- Overview -->
+
+    <div class="hostel-section">
+        <h2>Overview</h2>
+        <p>
+            The college hostel provides a comfortable and secure living environment
+            for students coming from different regions. It is designed to support
+            academic focus, personal growth, and community living.
+        </p>
+        <p>
+            Separate hostels are available for boys and girls with round-the-clock
+            supervision and modern facilities.
+        </p>
+    </div>
+
+    <!-- Facilities -->
+
+    <div class="hostel-section">
+        <h2>Hostel Facilities</h2>
+        <ul class="hostel-list">
+            <li>Spacious and well-ventilated rooms</li>
+            <li>24/7 security and CCTV surveillance</li>
+            <li>Clean drinking water and power backup</li>
+            <li>Study halls and common rooms</li>
+            <li>High-speed Wi-Fi connectivity</li>
+            <li>Indoor games and recreational areas</li>
+        </ul>
+    </div>
+
+    <!-- Mess & Hygiene -->
+
+    <div class="hostel-section">
+        <h2>Mess & Hygiene</h2>
+        <p>
+            The hostel mess provides nutritious and hygienic food prepared under
+            strict quality standards. Regular cleaning and maintenance ensure a
+            healthy living environment for all students.
+        </p>
+    </div>
+
+    <!-- Safety -->
+
+    <div class="hostel-section">
+        <h2>Safety & Discipline</h2>
+        <p>
+            Student safety is a top priority. The hostel follows strict discipline
+            policies with wardens available at all times to assist students.
+        </p>
+        <ul class="hostel-list">
+            <li>24/7 warden supervision</li>
+            <li>Biometric / register entry system</li>
+            <li>Anti-ragging policy strictly enforced</li>
+        </ul>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="hostel-section">
+        <h2>Comfortable Campus Living</h2>
+        <p>
+            The hostel life encourages teamwork, discipline, and lifelong
+            friendships while providing a home-like atmosphere that supports
+            academic success.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

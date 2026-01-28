@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .smartboard-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .smartboard-title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .smartboard-title h1 {
+        font-size: 42px;
+        color: #0b3c5d;
+    }
+
+    .smartboard-title p {
+        font-size: 17px;
+        color: #555;
+    }
+
+    .smartboard-image {
+        width: 78%;
+        height: 600px;
+        object-fit: cover;
+        background: #f5f5f5;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border:none;
+        margin-left:100px;
+    }
+
+    .smartboard-section {
+        margin-bottom: 35px;
+    }
+
+    .smartboard-section h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+        color: #2e7d32;
+    }
+
+    .smartboard-section ul {
+        padding-left: 20px;
+    }
+
+    .smartboard-section li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .smartboard-title h1 {
+            font-size: 32px;
+        }
+
+        .smartboard-image {
+            height: 260px;
+        }
+    }
+</style>
+
+<div class="smartboard-page">
+
+    <!-- Title -->
+
+    <div class="smartboard-title">
+        <h1>Smart Board Facility</h1>
+        <p>Enhancing classroom learning through interactive technology</p>
+    </div>
+
+    <!-- Image -->
+
+    <img src="https://promark.co.in/wp-content/uploads/2023/06/Interactive-Flat-Panel-Display-for-education-1.jpeg"
+         alt="Smart Board Classroom"
+         class="smartboard-image">
+
+    <!-- Overview -->
+
+    <div class="smartboard-section">
+        <h2>Overview</h2>
+        <p>
+            Smart Boards play a vital role in modern education by transforming
+            traditional classrooms into interactive learning environments.
+            They enable teachers to deliver engaging lessons using digital
+            content, animations, videos, and real-time annotations.
+        </p>
+    </div>
+
+    <!-- Features -->
+
+    <div class="smartboard-section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Interactive touch-enabled display for real-time learning</li>
+            <li>Supports multimedia content like videos, images, and animations</li>
+            <li>Easy integration with laptops, projectors, and internet resources</li>
+            <li>Digital writing and annotation tools</li>
+            <li>Improves student engagement and classroom interaction</li>
+        </ul>
+    </div>
+
+    <!-- Benefits -->
+
+    <div class="smartboard-section">
+        <h2>Benefits for Students</h2>
+        <ul>
+            <li>Better understanding through visual and interactive teaching</li>
+            <li>Encourages active participation and collaboration</li>
+            <li>Enhances focus and interest in classroom sessions</li>
+            <li>Supports different learning styles</li>
+        </ul>
+    </div>
+
+    <!-- Usage -->
+     
+    <div class="smartboard-section">
+        <h2>Usage Across Departments</h2>
+        <p>
+            Smart Boards are used across all departments for lectures,
+            presentations, demonstrations, and virtual sessions, ensuring
+            a technology-driven learning experience for students.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

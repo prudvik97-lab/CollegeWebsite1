@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .mech-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .mech-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .mech-title h1 {
+        font-size: 48px;
+        color: #0b3c5d;
+    }
+
+    .mech-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .mech-banner {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .mech-section {
+        margin-bottom: 45px;
+    }
+
+    .mech-section h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .mech-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .mech-list {
+        padding-left: 20px;
+    }
+
+    .mech-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .mech-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .mech-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .mech-title h1 {
+            font-size: 36px;
+        }
+
+        .mech-banner {
+            height: 260px;
+        }
+    }
+</style>
+
+<div class="mech-page">
+
+    <!-- Title -->
+
+    <div class="mech-title">
+        <h1>Mechanical Engineering</h1>
+        <p>Designing, manufacturing, and powering the modern world</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://static4.depositphotos.com/1011764/330/i/450/depositphotos_3306463-stock-photo-blueprint.jpg"
+         alt="Mechanical Engineering"
+         class="mech-banner">
+
+    <!-- Overview -->
+
+    <div class="mech-section">
+        <h2>Overview</h2>
+        <p>
+            Mechanical Engineering is one of the oldest and broadest branches of
+            engineering. It focuses on the design, analysis, manufacturing, and
+            maintenance of mechanical systems.
+        </p>
+        <p>
+            The program integrates principles of physics, mathematics, and material
+            science to develop machines, tools, engines, and energy systems used in
+            various industries.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="mech-section">
+        <h2>Vision & Mission</h2>
+
+        <p><strong>Vision:</strong></p>
+        <p>
+            To produce competent mechanical engineers with strong technical knowledge,
+            innovation skills, and ethical values.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul class="mech-list">
+            <li>To provide quality education in mechanical engineering fundamentals.</li>
+            <li>To promote practical learning, research, and innovation.</li>
+            <li>To develop industry-ready professionals with social responsibility.</li>
+        </ul>
+    </div>
+
+    <!-- Core Subjects -->
+
+    <div class="mech-section">
+        <h2>Core Subjects</h2>
+        <ul class="mech-list">
+            <li>Engineering Mechanics</li>
+            <li>Strength of Materials</li>
+            <li>Thermodynamics</li>
+            <li>Fluid Mechanics</li>
+            <li>Manufacturing Processes</li>
+            <li>Machine Design</li>
+        </ul>
+    </div>
+
+    <!-- Advanced Areas -->
+
+    <div class="mech-section">
+        <h2>Advanced Learning Areas</h2>
+        <ul class="mech-list">
+            <li>Robotics and Automation</li>
+            <li>Computer-Aided Design (CAD / CAM)</li>
+            <li>Thermal Engineering</li>
+            <li>Automobile Engineering</li>
+            <li>Renewable Energy Systems</li>
+            <li>Mechatronics</li>
+        </ul>
+    </div>
+
+    <!-- Labs & Infrastructure -->
+
+    <div class="mech-section">
+        <h2>Laboratories & Infrastructure</h2>
+        <p>
+            The department is equipped with advanced laboratories and modern tools
+            that support hands-on learning and research activities.
+        </p>
+        <ul class="mech-list">
+            <li>Thermal Engineering Lab</li>
+            <li>Strength of Materials Lab</li>
+            <li>Fluid Mechanics & Machinery Lab</li>
+            <li>Manufacturing & CNC Lab</li>
+            <li>CAD / CAM & Simulation Lab</li>
+        </ul>
+    </div>
+
+    <!-- Career Opportunities -->
+
+    <div class="mech-section">
+        <h2>Career Opportunities</h2>
+        <p>
+            Mechanical Engineering graduates have diverse career opportunities
+            across core industries and emerging technologies.
+        </p>
+
+        <div class="mech-grid">
+            <div class="mech-box">
+                <ul class="mech-list">
+                    <li>Design Engineer</li>
+                    <li>Production Engineer</li>
+                    <li>Maintenance Engineer</li>
+                </ul>
+            </div>
+
+            <div class="mech-box">
+                <ul class="mech-list">
+                    <li>Automobile Engineer</li>
+                    <li>Thermal Engineer</li>
+                    <li>Quality Control Engineer</li>
+                </ul>
+            </div>
+
+            <div class="mech-box">
+                <ul class="mech-list">
+                    <li>Robotics & Automation Engineer</li>
+                    <li>Research & Development</li>
+                    <li>Higher Studies & Public Sector</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Mechanical -->
+     
+    <div class="mech-section">
+        <h2>Why Choose Mechanical Engineering?</h2>
+        <p>
+            Mechanical Engineering is the backbone of industrial development.
+            From automobiles and power plants to robotics and renewable energy,
+            mechanical engineers play a crucial role in shaping the future.
+        </p>
+        <p>
+            This field offers long-term career stability, global opportunities,
+            and the ability to work across multiple industries.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}
+

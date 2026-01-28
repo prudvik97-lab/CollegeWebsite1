@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .civil-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .civil-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .civil-title h1 {
+        font-size: 48px;
+        color: #0b3c5d;
+    }
+
+    .civil-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .civil-banner {
+        width: 70%;
+        height: 550px;
+        object-fit: cover;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        margin-left : 200px;
+    }
+
+    .civil-section {
+        margin-bottom: 45px;
+    }
+
+    .civil-section h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .civil-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .civil-list {
+        padding-left: 20px;
+    }
+
+    .civil-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .civil-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .civil-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .civil-title h1 {
+            font-size: 36px;
+        }
+
+        .civil-banner {
+            height: 260px;
+        }
+    }
+</style>
+
+<div class="civil-page">
+
+    <!-- Title -->
+
+    <div class="civil-title">
+        <h1>Civil Engineering</h1>
+        <p>Designing and building the backbone of modern infrastructure</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://c8.alamy.com/comp/2B00H2B/portrait-of-beautiful-asian-woman-architect-builder-with-yellow-helmet-hard-hat-studying-blueprint-plan-of-the-rooms-serious-civil-engineer-working-w-2B00H2B.jpg"
+         alt="Civil Engineering"
+         class="civil-banner">
+
+    <!-- Overview -->
+
+    <div class="civil-section">
+        <h2>Overview</h2>
+        <p>
+            Civil Engineering is one of the oldest and most important branches of
+            engineering. It focuses on the planning, design, construction, and
+            maintenance of infrastructure that supports modern society.
+        </p>
+        <p>
+            Civil engineers play a crucial role in shaping cities, transportation
+            systems, water resources, and sustainable development projects.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="civil-section">
+        <h2>Vision & Mission</h2>
+
+        <p><strong>Vision:</strong></p>
+        <p>
+            To produce competent civil engineers capable of designing sustainable
+            and safe infrastructure for societal development.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul class="civil-list">
+            <li>To provide strong theoretical and practical knowledge in civil engineering.</li>
+            <li>To promote innovation and sustainable construction practices.</li>
+            <li>To develop ethical and responsible professionals.</li>
+        </ul>
+    </div>
+
+    <!-- Core Subjects -->
+
+    <div class="civil-section">
+        <h2>Core Subjects</h2>
+        <ul class="civil-list">
+            <li>Engineering Mechanics</li>
+            <li>Strength of Materials</li>
+            <li>Structural Analysis</li>
+            <li>Geotechnical Engineering</li>
+            <li>Transportation Engineering</li>
+            <li>Environmental Engineering</li>
+        </ul>
+    </div>
+
+    <!-- Specialization Areas -->
+
+    <div class="civil-section">
+        <h2>Specialization Areas</h2>
+        <ul class="civil-list">
+            <li>Structural Engineering</li>
+            <li>Construction Planning & Management</li>
+            <li>Geotechnical Engineering</li>
+            <li>Water Resources Engineering</li>
+            <li>Transportation Engineering</li>
+            <li>Environmental Engineering</li>
+        </ul>
+    </div>
+
+    <!-- Laboratories & Facilities -->
+
+    <div class="civil-section">
+        <h2>Laboratories & Facilities</h2>
+        <p>
+            The Civil Engineering department is equipped with modern laboratories
+            to support practical learning and research.
+        </p>
+        <ul class="civil-list">
+            <li>Strength of Materials Lab</li>
+            <li>Geotechnical Engineering Lab</li>
+            <li>Concrete Technology Lab</li>
+            <li>Environmental Engineering Lab</li>
+            <li>Surveying Lab with modern instruments</li>
+        </ul>
+    </div>
+
+    <!-- Career Opportunities -->
+
+    <div class="civil-section">
+        <h2>Career Opportunities</h2>
+        <p>
+            Civil Engineering graduates have diverse career opportunities in both
+            public and private sectors.
+        </p>
+
+        <div class="civil-grid">
+            <div class="civil-box">
+                <ul class="civil-list">
+                    <li>Site Engineer</li>
+                    <li>Structural Engineer</li>
+                    <li>Construction Manager</li>
+                </ul>
+            </div>
+
+            <div class="civil-box">
+                <ul class="civil-list">
+                    <li>Project Engineer</li>
+                    <li>Transportation Engineer</li>
+                    <li>Environmental Engineer</li>
+                </ul>
+            </div>
+
+            <div class="civil-box">
+                <ul class="civil-list">
+                    <li>Government Services (PWD, Railways)</li>
+                    <li>Urban Planning & Consultancy</li>
+                    <li>Higher Studies & Research</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="civil-section">
+        <h2>Why Choose Civil Engineering?</h2>
+        <p>
+            Civil Engineering offers the opportunity to design and build
+            infrastructure that directly impacts society and quality of life.
+        </p>
+        <p>
+            It is a rewarding career for those passionate about construction,
+            sustainability, and nation-building.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

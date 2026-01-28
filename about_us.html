@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .about-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .about-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about-title h1 {
+        font-size: 48px;
+        color: #0b3c5d;
+    }
+
+    .about-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .about-banner {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 45px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .about-section {
+        margin-bottom: 45px;
+    }
+
+    .about-section h2 {
+        font-size: 30px;
+        color: #2e7d32;
+        margin-bottom: 15px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 25px;
+    }
+
+    .about-box {
+        background: #fff;
+        padding: 22px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .about-box h3 {
+        margin-bottom: 10px;
+        color: #0b3c5d;
+    }
+
+    @media (max-width: 768px) {
+        .about-title h1 {
+            font-size: 36px;
+        }
+
+        .about-banner {
+            height: 260px;
+        }
+    }
+</style>
+
+<div class="about-page">
+
+    <!-- Title -->
+
+    <div class="about-title">
+        <h1>About Our College</h1>
+        <p>Building knowledge, character, and future-ready engineers</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://www.nobroker.in/blog/wp-content/uploads/2025/01/college-of-engineering-pune.webp"
+         alt="College Campus"
+         class="about-banner">
+
+    <!-- About College -->
+
+    <div class="about-section">
+        <h2>Who We Are</h2>
+        <p>
+            Our engineering college is dedicated to delivering quality technical
+            education and nurturing skilled professionals who contribute to
+            technological advancement and national development.
+        </p>
+        <p>
+            With a strong academic foundation, modern infrastructure, and
+            experienced faculty, the institution creates an environment that
+            encourages innovation, creativity, and lifelong learning.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="about-section">
+        <h2>Vision & Mission</h2>
+
+        <p><strong>Vision:</strong></p>
+        <p>
+            To become a center of excellence in engineering education,
+            research, and innovation with global standards.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul>
+            <li>Provide quality education with strong ethical values</li>
+            <li>Promote research, innovation, and industry collaboration</li>
+            <li>Prepare students for professional excellence and leadership</li>
+        </ul>
+    </div>
+
+    <!-- Why Choose Us -->
+
+    <div class="about-section">
+        <h2>Why Choose Our College?</h2>
+
+        <div class="about-grid">
+            <div class="about-box">
+                <h3>Experienced Faculty</h3>
+                <p>
+                    Highly qualified and dedicated faculty members guide students
+                    with academic excellence and practical exposure.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Modern Infrastructure</h3>
+                <p>
+                    Advanced laboratories, digital classrooms, libraries,
+                    hostels, sports facilities, and research centers.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Industry-Oriented Learning</h3>
+                <p>
+                    Strong focus on internships, projects, certifications,
+                    and industry partnerships.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Career & Placements</h3>
+                <p>
+                    Dedicated training and placement cell supporting students
+                    for top career opportunities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Campus Life -->
+     
+    <div class="about-section">
+        <h2>Campus Life</h2>
+        <p>
+            The campus provides a vibrant and inclusive environment with
+            academic excellence, cultural activities, technical clubs,
+            sports, and community engagement.
+        </p>
+        <p>
+            Students develop leadership, teamwork, and communication skills
+            while enjoying a safe, disciplined, and supportive campus life.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

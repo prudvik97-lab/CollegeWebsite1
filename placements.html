@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+    .placements-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .placements-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .placements-title h1 {
+        font-size: 42px;
+        color: #0b3c5d;
+    }
+
+    .placements-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .placements-section {
+        margin-bottom: 45px;
+    }
+
+    .placements-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .placements-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .placements-list {
+        padding-left: 20px;
+    }
+
+    .placements-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 25px;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .company-logos img {
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .company-logos img:hover {
+        transform: scale(1.08);
+    }
+
+    .placement-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .stat-box {
+        background: #fff;
+        padding: 25px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .stat-box h3 {
+        font-size: 32px;
+        color: #0b3c5d;
+        margin-bottom: 8px;
+    }
+
+    .stat-box p {
+        font-size: 15px;
+        color: #555;
+    }
+
+    @media (max-width: 768px) {
+        .placements-title h1 {
+            font-size: 32px;
+        }
+    }
+</style>
+
+<div class="placements-page">
+
+    <!-- Title -->
+
+    <div class="placements-title">
+        <h1>Placements</h1>
+        <p>Building successful careers through strong industry connections</p>
+    </div>
+
+    <!-- Overview -->
+
+    <div class="placements-section">
+        <h2>Placement Cell Overview</h2>
+        <p>
+            The Training and Placement Cell plays a vital role in shaping students'
+            careers by providing excellent placement opportunities in reputed
+            national and multinational companies.
+        </p>
+        <p>
+            The cell focuses on skill development, career guidance, and industry
+            exposure to make students job-ready.
+        </p>
+    </div>
+
+    <!-- Training & Support -->
+
+    <div class="placements-section">
+        <h2>Training & Career Support</h2>
+        <ul class="placements-list">
+            <li>Technical skill development programs</li>
+            <li>Aptitude and reasoning training</li>
+            <li>Soft skills and communication training</li>
+            <li>Mock interviews and group discussions</li>
+            <li>Resume building and career counseling</li>
+        </ul>
+    </div>
+
+    <!-- Placement Statistics -->
+
+    <div class="placements-section">
+        <h2>Placement Highlights</h2>
+
+        <div class="placement-stats">
+            <div class="stat-box">
+                <h3>90%+</h3>
+                <p>Students Placed</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>120+</h3>
+                <p>Recruiting Companies</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>12 LPA</h3>
+                <p>Highest Package</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>4.5 LPA</h3>
+                <p>Average Package</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recruiters -->
+
+    <div class="placements-section">
+        <h2>Our Top Recruiters</h2>
+        <p>
+            Our students are recruited by leading companies across IT, core engineering,
+            analytics, consulting, and emerging technology domains.
+        </p>
+
+        <div class="company-logos">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7myAjvmwzQHEBugXX3GOtPlYyJi8dypXecw&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUL0oCV1hrATrfRN2dYVNPAerQWCTP1o77ag&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrla76xkOFYz9GrBDcztDm9URm__5c__XkPA&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXFjIwLJwEGvGAsV1ouNO5TDhcf4ViMJi2Q&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bWlgffy19eWaiVg6-4T6CjPp1cXxWuVMkw&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1uT5jGS1_kV5tqiIf3t_WK5DRtTM57GWGsA&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDEfiu6ICkrO9-9hdkEjysK0mhhBLYTRc6jQ&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Nwcwfydshwj7yMRpMBMDPZH_2NSr1J3m2g&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-SEFO1q1Kuu6N8CSBD2efdsGnjnrHlNOFCQ&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChkHsxkoc8BTw4Bo38MQCpN-PEFh5acrUBQ&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLe6xmd_qEu44WTGYW-Up9s3aOocSZA3Mk-Q&s" alt="companies">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fPf4fwKlsbKE5J4It425kffDGwS1Ask9sw&s" alt="companies">
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="placements-section">
+        <h2>Career Growth & Opportunities</h2>
+        <p>
+            With strong industry partnerships and continuous training initiatives,
+            the placement cell ensures that students are well-prepared for professional
+            success.
+        </p>
+        <p>
+            Our graduates excel in corporate roles, entrepreneurship, higher studies,
+            and research across the globe.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

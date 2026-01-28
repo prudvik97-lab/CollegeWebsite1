@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .noragging-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .noragging-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .noragging-title h1 {
+        font-size: 44px;
+        color: #0b3c5d;
+    }
+
+    .noragging-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .noragging-banner {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .noragging-section {
+        margin-bottom: 35px;
+    }
+
+    .noragging-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .noragging-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .noragging-list {
+        padding-left: 20px;
+    }
+
+    .noragging-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .noragging-title h1 {
+            font-size: 34px;
+        }
+
+        .noragging-banner {
+            height: 260px;
+        }
+    }
+</style>
+
+<div class="noragging-page">
+
+    <!-- Title -->
+
+    <div class="noragging-title">
+        <h1>No Ragging Policy</h1>
+        <p>Zero tolerance towards ragging  ensuring a safe and respectful campus</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://www.rkgitm.ac.in/wp-content/uploads/2022/05/antiregging.jpg"
+         alt="Anti Ragging Policy"
+         class="noragging-banner">
+
+    <!-- Overview -->
+
+    <div class="noragging-section">
+        <h2>Our Commitment</h2>
+        <p>
+            The college strictly follows a zero-tolerance policy towards ragging.
+            Any form of ragging—physical, mental, verbal, or psychological—is
+            strictly prohibited on campus and in hostels.
+        </p>
+        <p>
+            We are committed to providing a safe, friendly, and supportive
+            environment where every student feels secure and respected.
+        </p>
+    </div>
+
+    <!-- Anti Ragging Measures -->
+
+    <div class="noragging-section">
+        <h2>Anti-Ragging Measures</h2>
+        <ul class="noragging-list">
+            <li>Strict enforcement of UGC anti-ragging guidelines</li>
+            <li>Anti-Ragging Committee and Squad</li>
+            <li>Awareness programs and orientations for students</li>
+            <li>24/7 monitoring in hostels and campus areas</li>
+            <li>Immediate disciplinary action against offenders</li>
+        </ul>
+    </div>
+
+
+    <!-- Student Support -->
+
+    <div class="noragging-section">
+        <h2>Student Support & Reporting</h2>
+        <p>
+            Students can report any ragging-related incidents without fear.
+            Confidentiality is maintained, and prompt action is taken to ensure
+            justice and safety.
+        </p>
+        <ul class="noragging-list">
+            <li>Dedicated grievance redressal system</li>
+            <li>Faculty mentors and counselors</li>
+            <li>Helpline numbers and email support</li>
+        </ul>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="noragging-section">
+        <h2>Safe Campus Culture</h2>
+        <p>
+            Our institution promotes discipline, respect, and harmony among
+            students. A ragging-free campus helps students focus on learning,
+            personal growth, and building a positive academic experience.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

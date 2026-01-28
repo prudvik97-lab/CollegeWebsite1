@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+
+
+    .success-container {
+        text-align: center; 
+        margin: 100px auto;
+        padding: 40px;
+        max-width: 500px;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    }
+
+
+    .success-container h2 {
+        color: #0b3c5d;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+
+    #btn {
+        display: inline-block; 
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        background: linear-gradient(to right, #ff69b4, #2ecc71); 
+        padding: 12px 25px;
+        border: none;
+        border-radius: 50px; 
+        transition: transform 0.2s, box-shadow 0.2s; 
+        margin-top: 20px;
+    }
+
+
+    #btn:hover {
+        transform: translateY(-3px); 
+        box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        background: linear-gradient(to right, #ff85c1, #36e07c);
+    }
+
+    
+    .pop {
+        display: inline-block;
+        animation: celebration 0.5s ease-out;
+    }
+
+    @keyframes celebration {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.5); }
+        100% { transform: scale(1); }
+    }
+</style>
+
+<div class="success-container">
+    <h2>Admission Submitted <span class="pop"></span></h2>
+    <p style="color: #666; font-size: 1.1rem;">Thank you! Our team will contact you shortly.</p>
+    
+    <a href="{% url 'admission' %}" id="btn">Submit another response</a>
+</div>
+
+{% endblock %}

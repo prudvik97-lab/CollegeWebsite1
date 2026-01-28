@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+    .cse-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .cse-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .cse-title h1 {
+        font-size: 48px;
+        color: #0b3c5d;
+    }
+
+    .cse-title p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .cse-banner {
+        width: 100%;
+        height: auto;             
+        max-height: 90vh;         
+        object-fit: contain;     
+        display: block;
+        margin: 0 auto 40px;
+        border-radius: 10px;
+        background-color: #f5f5f5; 
+    }
+
+
+    .cse-section {
+        margin-bottom: 45px;
+    }
+
+    .cse-section h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #2e7d32;
+    }
+
+    .cse-section p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .cse-list {
+        padding-left: 20px;
+    }
+
+    .cse-list li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .cse-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .cse-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+        .cse-title h1 {
+            font-size: 36px;
+        }
+
+        .cse-banner {
+            height: 260px;
+        }
+    }
+
+
+</style>
+
+<div class="cse-page">
+
+    <!-- Title -->
+
+    <div class="cse-title">
+        <h1>Computer Science & Engineering</h1>
+        <p>Innovating the future through computing and technology</p>
+    </div>
+
+    <!-- Banner Image -->
+
+    <img src="https://nietm.in/wp-content/uploads/2022/11/CSE3.png"
+         alt="Computer Science Engineering"
+         class="cse-banner">
+
+    <!-- Overview -->
+
+    <div class="cse-section">
+        <h2>Overview</h2>
+        <p>
+            Computer Science and Engineering (CSE) is a core branch of engineering
+            that focuses on the study, design, development, and application of
+            computer systems and software technologies.
+        </p>
+        <p>
+            The CSE program builds a strong foundation in programming, problem
+            solving, data structures, algorithms, and modern computing techniques.
+            It prepares students to design efficient solutions for real-world
+            problems using technology.
+        </p>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="cse-section">
+        <h2>Vision & Mission</h2>
+        <p><strong>Vision:</strong></p>
+        <p>
+            To produce skilled and ethical computer engineers capable of contributing
+            to technological innovation and global development.
+        </p>
+
+        <p><strong>Mission:</strong></p>
+        <ul class="cse-list">
+            <li>To provide quality education in computer science and engineering.</li>
+            <li>To encourage innovation, research, and continuous learning.</li>
+            <li>To develop professionals with strong technical and ethical values.</li>
+        </ul>
+    </div>
+
+    <!-- Core Subjects -->
+
+    <div class="cse-section">
+        <h2>Core Subjects</h2>
+        <ul class="cse-list">
+            <li>Programming Languages (C, C++, Java, Python)</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+            <li>Database Management Systems</li>
+            <li>Software Engineering</li>
+        </ul>
+    </div>
+
+    <!-- Advanced Areas -->
+
+    <div class="cse-section">
+        <h2>Advanced Learning Areas</h2>
+        <ul class="cse-list">
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Data Science</li>
+            <li>Cloud Computing</li>
+            <li>Cyber Security</li>
+            <li>Web and Mobile Application Development</li>
+        </ul>
+    </div>
+
+    <!-- Labs & Infrastructure -->
+
+    <div class="cse-section">
+        <h2>Laboratories & Infrastructure</h2>
+        <p>
+            The CSE department is equipped with modern laboratories and advanced
+            computing infrastructure to support practical learning and research.
+        </p>
+        <ul class="cse-list">
+            <li>Programming & Software Development Lab</li>
+            <li>Data Structures & Algorithms Lab</li>
+            <li>AI & Machine Learning Lab</li>
+            <li>Database & Web Technologies Lab</li>
+            <li>High-speed internet and licensed software tools</li>
+        </ul>
+    </div>
+
+    <!-- Career Opportunities -->
+
+    <div class="cse-section">
+        <h2>Career Opportunities</h2>
+        <p>
+            Computer Science & Engineering graduates have excellent career prospects
+            across multiple industries worldwide.
+        </p>
+
+        <div class="cse-grid">
+            <div class="cse-box">
+                <ul class="cse-list">
+                    <li>Software Engineer / Developer</li>
+                    <li>Web & Mobile App Developer</li>
+                    <li>System Engineer</li>
+                </ul>
+            </div>
+
+            <div class="cse-box">
+                <ul class="cse-list">
+                    <li>Data Scientist</li>
+                    <li>AI / ML Engineer</li>
+                    <li>Cloud Engineer</li>
+                </ul>
+            </div>
+
+            <div class="cse-box">
+                <ul class="cse-list">
+                    <li>Cyber Security Analyst</li>
+                    <li>Network Engineer</li>
+                    <li>Higher Studies & Research</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+     
+    <div class="cse-section">
+        <h2>Why Choose CSE?</h2>
+        <p>
+            Computer Science & Engineering is the backbone of the digital world.
+            From artificial intelligence and data analytics to cloud platforms
+            and cybersecurity, CSE professionals drive innovation everywhere.
+        </p>
+        <p>
+            Choosing CSE opens doors to global opportunities, strong career growth,
+            and the ability to shape the future through technology.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

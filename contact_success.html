@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.success-box {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.success-box h2 {
+    color: #2e7d32;
+}
+.success-box a{
+    text-decoration : none;
+    background : rgb(47, 78, 134);
+    padding : 10px;
+    border : none;
+    border-radius : 5px;
+    color:white;
+    
+}
+</style>
+
+<div class="success-box">
+    <h2>Message Sent Successfully </h2>
+    <p>Thank you for contacting us. We will get back to you soon.</p>
+    <a href="{% url 'home' %}">Go Back to Home</a>
+</div>
+
+{% endblock %}
